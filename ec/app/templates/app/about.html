@@ -1,0 +1,81 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Acerca de nosotros | Astral Shop{% endblock title %}
+
+{% block main-content %}
+    <div class="contenedor mt-5">
+        <div class="fila">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="titulo-bienvenida">
+                    Bienvenido a Astral Shop
+                </h2>
+                <p class="texto-bienvenida fs-4">
+                    Descubre nuestra historia y compromiso de ofrecerte productos de calidad.
+                </p>
+            </div>
+        </div>
+
+        <section class="my-5">
+            <div class="fila">
+                <div class="col-md-8 offset-md-2">
+                    <h3 class="titulo-seccion">Nuestra Historia</h3>
+                    <p class="fs-5">
+                        En el año 2023, Astral Shop nació con la visión de revolucionar la forma en que las personas compran productos en línea. Desde entonces, nos hemos dedicado a proporcionar a nuestros clientes una experiencia de compra única y conveniente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="fila">
+                <div class="col-md-8 offset-md-2">
+                    <h3 class="titulo-seccion">Misión y Visión</h3>
+                    <p class="fs-5">
+                        Nuestra misión es ofrecer productos de alta calidad a precios competitivos, brindando a nuestros clientes una experiencia de compra inigualable. Queremos ser reconocidos como el socio digital de confianza para todas sus necesidades.
+                    </p>
+                    <p class="fs-5">
+                        La visión de Astral Shop es crear un espacio en línea donde la diversidad de productos se encuentre con la comodidad de comprar desde la comodidad de su hogar.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock main-content %}
+{%block banner_slider_dos%}
+<br>
+<div id="carrusel-inicio" class="carrusel-inicio-2">
+    <div class="diapositivas-2">
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo1.jpg'%}" alt="banner1">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo2.jpg'%}" alt="banner2">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo3.jpg'%}" alt="banner3">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo4.jpg'%}" alt="banner4">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo5.jpg'%}" alt="banner4">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo6.jpg'%}" alt="banner4">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo7.jpg'%}" alt="banner4">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo8.jpg'%}" alt="banner4">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo9.jpg'%}" alt="banner4">
+        </div>
+        <div class="diapositiva-2">
+            <img src="{% static 'assets/images/banner/fondo10.jpg'%}" alt="banner4">
+        </div>
+    </div>
+</div>
+<br>
+{%endblock banner_slider_dos%}
