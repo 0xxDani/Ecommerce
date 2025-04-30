@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'paypal.standard.ipn', #IPN PAYPAL
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
+
 
 TIME_ZONE = 'UTC'
 
@@ -88,8 +91,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 #PAGOS
-RAZOR_KEY_ID = 'TU RAZOR KEY ID'
-RAZOR_KEY_SECRET = 'TU RAZOR KEY SECRET'
+RAZOR_KEY_ID = 'rzp_test_V3NdXPh72wKeN8'
+RAZOR_KEY_SECRET = 'VBaWeeL4qat7tGO9Dg6Wk9PF'
 
 PAYPAL_TEST = True
-PAYPAL_RECEIVER_EMAIL = 'TU PAY PAL EMAIL TEST'
+PAYPAL_RECEIVER_EMAIL = 'sb-qzv0529127780@business.example.com'

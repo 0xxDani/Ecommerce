@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="{% static 'src/bundle.css' %}">
 
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
     <title>{% block title %} {% endblock title%}</title>
@@ -118,12 +120,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="{% static 'src/bundle.js' %}"></script>
+    
         <footer class="footer">
             <div class="social-icons">
-                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100060375376089" class="icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_astralshopp/" class="icon" target="_blank"><i class="fab fa-instagram"></i></a>                  
+                <a href="https://api.whatsapp.com/send?phone=573017753925" class="icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  {% comment %} <a href="#" class="icon"><i class="fab fa-twitter"></i></a> {% endcomment %}
             </div>
         </footer>      
 </body>

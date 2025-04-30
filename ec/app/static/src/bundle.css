@@ -333,7 +333,7 @@ body.dark {
 .presentacion {
   text-align: center;
   color: var(--color-white);
-  font-size: 1.1em;
+  font-size: var(--font-size-2);
 }
 
 .presentacion h1 {
@@ -1178,44 +1178,40 @@ hr.custom-hr {
   font-family: var(--font-family-81);
 }
 
-/* Estilos para .comments-container */
 .comments-container {
   position: relative;
   max-width: 800px;
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 20px; /* Añade margen inferior */
-  text-align: center; /* Centra el contenido */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .comments-container h2 {
   font-family: var(--font-family-82);
   font-size: var(--font-size-7);
-  margin-bottom: 20px; /* Reducido para que no haya mucho espacio */
+  margin-bottom: 20px;
 }
 
-/* Estilos para .star-rating */
 .star-rating {
   font-size: 26px;
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Ajustado para separarlo del hr */
+  margin-top: 20px;
 }
 
 .checked {
   color: var(--color-amarillo-2);
 }
 
-/* Estilos para .comment-carousel */
 .comment-carousel {
   display: flex;
-  flex-direction: column; /* Alinea los comentarios verticalmente */
-  align-items: center; /* Centra los comentarios horizontalmente */
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
 }
 
-/* Estilos para .comment */
 .comment {
   width: 100%;
   text-align: center;
@@ -1224,17 +1220,16 @@ hr.custom-hr {
   font-family: var(--font-family-85);
   color: var(--color-verde-militar);
   font-size: var(--font-size-2);
-  margin-top: 10px; /* Ajustado para dar más espacio entre comentarios */
+  margin-top: 10px;
 }
 
-/* Estilos para .carousel-arrows */
 .carousel-arrows {
-  position: relative; /* Cambiado a relativo para posicionar las flechas con respecto a este contenedor */
+  position: relative;
   width: 100%;
   display: flex;
-  justify-content: center; /* Centra las flechas horizontalmente */
-  align-items: center; /* Centra las flechas verticalmente */
-  margin-top: 10px; /* Ajustado para dar más espacio arriba */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .prev,
@@ -1244,30 +1239,29 @@ hr.custom-hr {
 }
 
 .prev {
-  left: 0; /* Alinea la flecha izquierda al borde izquierdo del contenedor */
+  left: 0;
   margin-top: -190px;
   margin-right: 680px;
 }
 
 .next {
-  right: 0; /* Alinea la flecha derecha al borde derecho del contenedor */
+  right: 0;
   margin-top: -190px;
 }
 
 .custom-container hr {
-  width: 100%; /* Hace que el hr ocupe el ancho completo */
-  margin-bottom: 20px; /* Ajustado para dar más espacio abajo */
+  width: 100%;
+  margin-bottom: 20px;
   height: 2px;
   background-color: var(--color-amarillo);
 }
 
-/* Estilos para pantalla pequeña (máximo 600px) */
 @media screen and (max-width: 600px) {
   .comments-container {
-    padding: 0px; /* Reduce el padding en pantallas pequeñas */
+    padding: 0px;
   }
   .carousel-arrows {
-    flex-direction: row; /* Coloca las flechas en una columna en pantallas pequeñas */
+    flex-direction: row;
   }
   .prev,
   .next {

@@ -1,0 +1,5 @@
+Ingresar a pay pay developer
+Crear una cuenta sandbox
+ubicar el correo de prueba en el archivo settings.py para poder enlazarlo
+sb-hwlt339044186@personal.example.com
+12345Dani..-

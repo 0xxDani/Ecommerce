@@ -269,21 +269,27 @@ def paypal_cancel(request):
 
 @login_required
 def payment_done(request):
-    order_id=request.GET.get('order_id')
-    payment_id=request.GET.get('payment_id')
-    cust_id=request.GET.get('cust_id')
+    order_id = request.GET.get('order_id')
+    payment_id = request.GET.get('payment_id')
+    cust_id = request.GET.get('cust_id')
 
-    user=request.user
-    customer=Customer.objects.get(id=cust_id)
+    user = request.user
+    customer = Customer.objects.get(id=cust_id)
 
-    payment=Payment.objects.get(razorpay_order_id=order_id)
+    try:
+        payment = Payment.objects.get(razorpay_order_id=order_id)
+    except Payment.DoesNotExist:
+        raise Http404("El pago no existe para el order_id recibido")
+
     payment.paid = True
     payment.razorpay_payment_id = payment_id
     payment.save()
-    cart=Cart.objects.filter(user=user)
+
+    cart = Cart.objects.filter(user=user)
     for c in cart:
-        OrderPlaced(user=user,customer=customer,product=c.product,cantidad=c.cantidad,payment=payment).save()
+        OrderPlaced(user=user, customer=customer, product=c.product, cantidad=c.cantidad, payment=payment).save()
         c.delete()
+
     return redirect("orders")
 
 @login_required

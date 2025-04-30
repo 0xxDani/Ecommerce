@@ -1,6 +1,6 @@
 {% extends 'app/base.html' %}
 {% load static %}
-{% block title %}Inicio de sesion | Astral Shop{% endblock title %}
+{% block title %}Inicio de sesion | Lili Fashion{% endblock title %}
 
 {% block main-content %}
 <div class="container">
@@ -17,7 +17,8 @@
                         {{fm.errors|striptags}} 
                     </small><br>
                 {% endfor %}
-                <small class="small-link"><a href="{% url 'password_reset' %}">Olvidó su contraseña ?</a></small>
+                {% comment %} PENDIENTE POR AÑADIR CORREO ELECTRÓNICO AL LOGIN PARA PODER HACER ESTO {% endcomment %}
+                {% comment %} <small class="small-link"><a href="{% url 'password_reset' %}">Olvidó su contraseña ?</a></small> {% endcomment %}
                 <br>
                 <input type="submit" class="btn btn-primary mt-4" value="Iniciar sesión">
                 <br><br><br><br>
